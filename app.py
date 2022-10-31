@@ -45,8 +45,15 @@ def balance_teams():
             bandits.append(non_exp_player)
 
 
+def print_status():
+    print('------ MENU ------\n')
+    print('Here are your choices:1\n1) Display Teams Stats\n2) Quit\n')
+    option_1 = input('Enter an option: ') 
+    print('1) Panthers\n2) Bandits\n3) Warriors')
+    option_2 = input('Enter an option: ')
 
 if __name__ == '__main__':
+    print_status()
     clean_data(players)
     balance_teams()
     print(len(warriors))
